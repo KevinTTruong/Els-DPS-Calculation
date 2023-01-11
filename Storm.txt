@@ -1,0 +1,17 @@
+Parsing Page
+-Get 3 tables: Main, Traits, Total Damage
+ -If no Dam-based Traits, don't attempt to extract Total Damage 
+-Put into and export as JSON
+-Separate by JC
+
+Parsing JSON
+-Parse if normal, parse if special
+-If Total Damage table not available aka no Dam-based Traits, use Main
+-Separate Damage from passives
+
+Calculation
+-Time = 1 rotation (assumes unlimited MP and fast CD)
+-Hold based Skills = 2 rotations
+-Use top X damage skills
+-Subtract X based on # of required buffs
+-Include Passives and Base JC Passive
